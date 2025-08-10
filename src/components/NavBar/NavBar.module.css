@@ -1,0 +1,92 @@
+.container {
+    background-color: var(--verde-primario);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 30px; 
+    box-sizing: border-box; 
+}
+
+
+.container div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+}
+
+
+.container div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    gap: 20px;
+    height: 100%;
+}
+
+.container span {
+    color: white;
+    font-family: sans-serif; 
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+
+.container span:hover {
+    color: var(--verde-secundario); 
+}
+
+
+.logo {
+    height: 70%;
+    object-fit: contain;
+   
+}
+
+.agendeBtn {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.agendeBtn:hover {
+    background-color: darkred;
+}
+
+.calendarIcon {
+    height: 20px;
+    width: 20px;
+    
+}
+
+
+.container div:last-child img {
+    height: 40%; 
+    object-fit: cover;
+    margin-left: 0; 
+}
+
+
+.container input[type="button"] {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container input[type="button"]:hover {
+    background-color: darkred; 
+}
