@@ -6,15 +6,21 @@
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-    padding: 0 30px; 
+    padding: 0 2rem; 
     box-sizing: border-box; 
+    flex-wrap: wrap;
+    min-height: 5rem;
 }
 
+
+.userImg{
+    width: 18px;
+}
 
 .container div:first-child {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
     height: 100%;
 }
 
@@ -23,11 +29,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-end; 
-    gap: 20px;
+    gap: 0.5rem;
     height: 100%;
 }
 
 .container span {
+    font-size: 1rem;
+    font-weight: bold;
     color: white;
     font-family: sans-serif; 
     cursor: pointer; 
@@ -35,20 +43,22 @@
 }
 
 .container span:hover {
-    color: var(--verde-secundario); 
+    transition: 1s;
+    font-size: 18px;
 }
 
 
 .logo {
-    height: 70%;
+    height: 2.5rem;
     object-fit: contain;
-   
+    cursor: pointer;
 }
 
 .agendeBtn {
     color: white;
     background-color: red;
     border-radius: 5px;
+    border-style: none;
     padding: 8px 20px;
     font-weight: bold;
     cursor: pointer;
@@ -63,14 +73,13 @@
 }
 
 .calendarIcon {
-    height: 20px;
     width: 20px;
-    
+
 }
 
 
 .container div:last-child img {
-    height: 40%; 
+
     object-fit: cover;
     margin-left: 0; 
 }
@@ -89,4 +98,35 @@
 
 .container input[type="button"]:hover {
     background-color: darkred; 
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .container div:first-child,
+    .container div:last-child {
+        justify-content: center;
+        gap: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .logo {
+        height: 3rem; 
+    }
+
+    .agendeBtn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+
+    .container span {
+        font-size: 0.9rem;
+    }
 }

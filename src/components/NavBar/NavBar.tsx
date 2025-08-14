@@ -13,7 +13,9 @@ function NavBar() {
                 <span>Contato</span>
             </div>
             <div>
-                <img src={Perfil} alt="Perfil do usuário" />
+                <a href="#">
+                     <img src={Perfil} alt="Perfil do usuário" className={styles.userImg} />
+                </a>
                 <span>Área do Paciente</span>
                 <button className={styles.agendeBtn}>
                     <img src={Calendar} alt="Ícone de calendário" className={styles.calendarIcon} />
